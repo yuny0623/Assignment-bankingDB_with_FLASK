@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>계좌정보 및 거래내역조회</h1>
+    <p>고객주민번호입력</p>
+    <form method="POST">
+        <input type="text", name="get_account_info_by_SSN">
+        <button type="submit">조회</button>
+    </form>
+    <h1>조회내역</h1>
+    <lebel>고객명: {{account_user_name}}<br>
+    <lebel>고객번호: {{account_user_phone}}<br>
+    <lebel>고객이메일: {{account_user_email}}<br>
+    <lebel>예금구분: {{account_class}}<br>
+    <lebel>예금내용: {{account_content}}<br>
+    <lebel>거래금액: {{record_amount}}<br>
+    <lebel>예금잔고: {{account_left}}<br>
+
+    <h1> 거래시작 </h1>
+    <form method="POST", action="/account_record/deposit">
+        <label>예금구분:<input type="text", name="get_account_record_class"><br>
+        <label>거래내용:<input type="text", name="get_account_record_content"><br>
+        <label>거래금액:<input type="text", name="get_account_record_amount"><br>
+        <button type="submit">입금</button>
+    </form>
+    <form method="POST", action="/account_record/fetch">
+        <label>예금구분:<input type="text", name="get_account_record_class_fecth"><br>
+        <label>거래내용:<input type="text", name="get_account_record_content_fecth"><br>
+        <label>거래금액:<input type="text", name="get_account_record_amount_fecth"><br>
+        <button type="submit">출금</button>
+    </form>
+</body>
+</html>

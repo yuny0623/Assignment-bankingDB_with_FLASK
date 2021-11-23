@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>고객이름입력</p>
+    <form method = "POST">
+        <input type="text", name="get_user">
+        <button type="submit"> search</button>
+    </form>
+
+    <h1>Search Result</h1>
+
+    <p>고객주민번호: {{user_SSN}}</p>
+    <p>고객명: {{user_name}}</p>
+    <p>고객주소: {{user_address}}</p>
+    <p>고객생년월일: {{user_birth}}</p>
+    <p>고객이메일: {{user_email}}</p>
+    <p>고객전화번호: {{user_phone}}</p>
+    <p>고객직업: {{user_job}}</p>
+
+    <h1>update profile</h1>
+    <form method = "POST", action="/user/update">
+        <label>고객주소<input type="text", name="get_address"><br>
+        <label>고객직업<input type="text", name="get_job"><br>
+        <button type="submit"> update</button>
+    </form>
+</body>
+</html>
