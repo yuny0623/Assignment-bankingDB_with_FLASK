@@ -1,2 +1,2 @@
-# bankingDB_with_FLASK
+# University assignment bankingDB_with_FLASK
 banking database implementation with FLASK + python 
