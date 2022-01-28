@@ -1,2 +1,2 @@
 # University assignment bankingDB_with_FLASK
-banking database implementation with FLASK + python 
+데이터베이스설계 과제: banking database implementation with FLASK + python 
